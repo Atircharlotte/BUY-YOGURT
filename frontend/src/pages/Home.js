@@ -1,8 +1,14 @@
 import React from 'react';
 import Yogurts from '../components/Yogurt';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Home() {
+  const [item, setItem] = useState(0);
+  function handleOnClick() {
+    setItem(item + 1);
+  }
+
   return (
     <>
       <div>
@@ -20,7 +26,9 @@ export default function Home() {
             <li className="cart">
               <Link to="/cart">Cart</Link>
               {'  '}
-              <i class="fa-solid fa-square"></i>
+              <i class="fa-solid fa-square">
+                <span>{item}</span>
+              </i>
             </li>
           </ul>
         </nav>
@@ -31,7 +39,7 @@ export default function Home() {
           <p>-represent the best yogurt only for you-</p>
         </header>
       </div>
-      <Yogurts />
+      <Yogurts addItem={handleOnClick} />
       <footer className="footer">@YOoweGotURbesT all rights reserved</footer>
     </>
   );

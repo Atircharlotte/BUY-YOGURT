@@ -37,6 +37,9 @@ nav li:hover {
 nav li.cart {
   float: right;
 }
+nav li.cart span {
+  color: black;
+}
 
 .footer {
   text-align: center;
