@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Caveat', cursive;
+  align-items: center;
+}
+.header {
+  text-align: center;
+  background-color: lightblue;
+  color: cornflowerblue;
+  font-size: 50px;
+  padding: 50px;
+}
+b {
+  color: hotpink;
+}
+nav ul {
+  font-size: 30px;
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkcyan;
+  text-decoration: none;
+}
+nav li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+nav li:hover {
+  background-color: white;
+  color: darkcyan;
+  cursor: pointer;
+}
+nav li.cart {
+  float: right;
+}
+
+.footer {
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+}
+.yogurtSection {
+  width: 100%;
+  text-align: center;
+  margin: 50px;
+}
+.yogurtSection img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.littleYogurt {
+  display: inline-block;
+  margin: 10px 20px;
+  border-style: solid;
+  padding: 20px 20px;
+}
+button {
+  background: darkcyan;
+  color: white;
+  border-radius: 25px;
+  font-size: 20px;
+}
+button:hover {
+  background: white;
+  color: darkcyan;
+  cursor: pointer;
+}
